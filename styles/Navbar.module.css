@@ -1,0 +1,100 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    margin-inline: 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 44pt;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    color: black;
+    text-decoration: none;
+}
+
+.logo:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.logo:active {
+    color: black;
+}
+
+.navbutton {
+    color: black;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 16pt;
+    padding-inline: 40pt;
+    padding-top: 30pt;
+    padding-bottom: 15pt;
+    margin-bottom: 10pt;
+    border: 0;
+    background: none;
+}
+
+.firstnavbutton:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #424242;
+}
+
+.firstnavbutton:active {
+    color: black;
+}
+
+.secondnavbutton:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.secondnavbutton:active {
+    color: white;
+}
+
+.authcont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.authbutton {
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 16pt;
+    border: 0;
+    border-radius: 39pt;
+    padding-inline: 25pt;
+    padding-block: 8pt;
+    margin-inline: 10pt;
+}
+
+.firstauthbutton {
+    color: black;
+    background-color: white;
+}
+
+.firstauthbutton:hover{
+    cursor: pointer;
+    color: #d1d1d1;
+}
+
+.firstauthbutton:active{
+    color: black;
+}
+
+.secondauthbutton {
+    color: white;
+    background-color: #424242;
+}
+
+.secondauthbutton:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.secondauthbutton:active{
+    background-color: black;
+    color: white;
+}

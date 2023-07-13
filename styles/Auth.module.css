@@ -1,0 +1,66 @@
+.container {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 22%;
+    z-index: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.text {
+    font-size: 31pt;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+}
+
+.input{
+    width: 90%;
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    color: #424242;
+    border: 0;
+    border-bottom: 2px solid #424242;
+    text-align: center;
+    margin: 7%;
+    outline: none;
+    padding: 3%;
+}
+
+.button{
+    margin: 10%;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 20pt;
+    border: 0;
+    border-radius: 39pt;
+    padding-inline: 30pt;
+    padding-block: 13pt;
+    margin-inline: 10pt;
+    margin-top: 10%;
+    background-color: #858585;
+    color: white;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #c0c0c0;
+    color: black;
+}
+
+.button:active{
+    background-color: black;
+    color: white;
+}

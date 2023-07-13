@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+}
+
+.comicbooks {
+    background: no-repeat;
+    background-image: url("../resources/images/b14881c29a69fe008ad415b40de09d92.jpg");
+    background-size: cover;
+}
+
+.manga {
+    background: no-repeat;
+    background-image: url("../resources/images/36.jpg");
+    background-size: cover;
+}
+
+.ranobe {
+    background: no-repeat;
+    background-image: url("../resources/images/4069f3a99e4f542fa862edb84fda97ef.jpg");
+    background-size: cover;
+}
+
+.viewblock {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    padding-inline: 8%;
+    padding-bottom: 5%;
+    margin-bottom: 20pt;
+}
+
+.viewblocktext {
+    color: white;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 99pt;
+    margin: 0;
+}
+
+.viewblockbutton {
+    color: white;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 20pt;
+    padding-inline: 45pt;
+    padding-block: 20pt;
+    border: 2px solid white;
+    background: none;
+}
+
+.viewblockbutton:hover {
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.viewblockbutton:active {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+}

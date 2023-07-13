@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Franklin Gothic Demi Cond Regular";
+    src: url("../resources/fonts/Franklin_Gothic_Demi_Cond_Regular.ttf");
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    background-color: #d1d1d1;
+}
