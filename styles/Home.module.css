@@ -1,4 +1,6 @@
 .container {
+    margin: 0 auto;
+    padding: 0;
     width: 100%;
 }
 
@@ -57,4 +59,8 @@
     cursor: pointer;
     color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.2);
+}
+
+@media(max-width: 1370px){
+    
 }

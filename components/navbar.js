@@ -1,11 +1,12 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from '../styles/Navbar.module.css'
 import LogInBox from '../components/log_in_box'
 import SignInBox from '../components/sign_in_box'
 
 
 const Navbar = () => {
+    const [windowWidth, setWindowWidth] = useState(0)
     const [isLogInOpen, setIsLogInOpen] = useState(false)
     const [isSignInOpen, setIsSignInOpen] = useState(false)
     const handleLogInOpen = () => {
@@ -20,6 +21,13 @@ const Navbar = () => {
     const handleSignInClose = () => {
         setIsSignInOpen(false);
     }
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth)
+        }
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
 
     return (
         <>
@@ -27,7 +35,9 @@ const Navbar = () => {
                 <Link href="/" className={styles.logo}>COMICSHOP</Link>
                 <div>
                     <button className={`${styles.navbutton} ${styles.firstnavbutton}`}>CATALOG</button>
-                    <button className={`${styles.navbutton} ${styles.secondnavbutton}`}>CONTACT</button>
+                    <Link href="/contact">
+                        <button className={`${styles.navbutton} ${styles.secondnavbutton}`}>CONTACT</button>
+                    </Link>
                     <button className={`${styles.navbutton} ${styles.secondnavbutton}`}>ABOUT US</button>
                 </div>
                 <div className={styles.authcont}>
