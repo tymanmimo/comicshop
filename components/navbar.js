@@ -38,7 +38,9 @@ const Navbar = () => {
                     <Link href="/contact">
                         <button className={`${styles.navbutton} ${styles.secondnavbutton}`}>CONTACT</button>
                     </Link>
-                    <button className={`${styles.navbutton} ${styles.secondnavbutton}`}>ABOUT US</button>
+                    <Link href="/about_us">
+                        <button className={`${styles.navbutton} ${styles.secondnavbutton}`}>ABOUT US</button>
+                    </Link>
                 </div>
                 <div className={styles.authcont}>
                     <button className={`${styles.authbutton} ${styles.firstauthbutton}`} onClick={handleLogInOpen}>SIGN UP</button>
