@@ -1,67 +1,156 @@
 .container {
-    z-index: 0;
+    z-index: 50;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+
     background-color: rgba(0, 0, 0, 0.5);
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 500ms ease;
 }
 
+.hidden{
+    opacity: 0;
+}
+
+.animate{
+    margin-top: 40%;
+}
+
+
 .content {
-    width: 22%;
-    z-index: 1;
+    width: 22%;   
+    height: 40vw;
+    padding-inline: 3%;
+
     background-color: #ffffff;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3%;
+
+    overflow: hidden;
+    max-height: none;
+    transition: margin 500ms ease;
+}
+
+.close_button{
+    display: none;
+    width: 100%;
+    height: 5vh;
+
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid #424242;
+    background-color: white;
+    
+    color: #424242;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 16pt;
+}
+
+.substrate{
+    display: none;
+    width: 100%;
+    height: 0;
+}
+
+.main_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
+    font-family: 'Franklin Gothic Demi Cond Regular';
     font-size: 31pt;
-    font-family: 'Franklin Gothic Demi Cond Regular';
     text-align: center;
 }
 
-.input{
-    width: 90%;
-    font-size: 20pt;
-    font-family: 'Franklin Gothic Demi Cond Regular';
-    color: #424242;
-    border: 0;
-    border-bottom: 2px solid #424242;
-    text-align: center;
+.input {
     margin: 7%;
-    outline: none;
     padding: 3%;
+    width: 80%;
+
+    border: 0;
+    border-bottom: 1px solid #424242;
+
+    color: #424242;
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    text-align: center;
+    outline: none;    
 }
 
-.button{
+.button {
     margin: 10%;
-    font-family: 'Franklin Gothic Demi Cond Regular';
-    font-size: 20pt;
-    border: 0;
-    border-radius: 39pt;
-    padding-inline: 30pt;
-    padding-block: 13pt;
     margin-inline: 10pt;
     margin-top: 10%;
+
+    padding-inline: 30pt;
+    padding-block: 13pt;
+
+    border: 0;
+    border-radius: 39pt;
+
     background-color: #858585;
+
     color: white;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 20pt;
+    
 }
 
-.button:hover{
+.button:hover {
     cursor: pointer;
-    background-color: #c0c0c0;
     color: black;
+    background-color: #c0c0c0;
 }
 
-.button:active{
-    background-color: black;
+.button:active {
     color: white;
+    background-color: black;
+}
+
+@media (max-width: 1500px) {
+    .content{
+        height: 100vh;
+        width: 400px;
+    }
+    .text{
+        margin-block: 3vh;
+    }
+
+    .input{
+        margin-block: 3vh;
+    }
+
+    .button{
+        margin-block: 5vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .close_button{
+        display: block;
+    }
+
+    .substrate{
+        display: block;
+    }
+
+    .content{
+        justify-content: space-between;
+    }
 }

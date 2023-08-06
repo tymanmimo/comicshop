@@ -1,53 +1,122 @@
 .container {
     width: 100%;
+    height: 100%;
+
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
-.content{
-    display: flex;
-    flex-direction: row;
+.content {
     padding-right: 8%;
     padding-left: 6%;
-    height: 100%;
+
+    display: flex;
+    flex-direction: row;
 }
 
-.info{
+.info {
+    width: 30%;
+
+    padding-inline: 3%;
+    padding-top: 2%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     background-color: white;
-    width: 30%;
-    padding-inline: 3%;
-    padding-top: 2%;
-    line-height: 155%;
 }
 
-.info_text{
+.info_text {
     margin-inline: 0;
     padding: 0;
     color: black;
     font-family: 'Franklin Gothic Demi Cond Regular';
-    font-size: 17pt;
+    font-size: 20pt;
     text-align: justify;
+    line-height: 20px;
 }
 
-.visual{
+.visual {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
 }
 
-.image{
+.image {
     width: 100%;
-    height: 80%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.ABOUT_COMICSHOP{
+.ABOUT_COMICSHOP {
     margin: 0;
     color: white;
     font-family: 'Franklin Gothic Demi Cond Regular';
     font-size: 80pt;
+    white-space: nowrap;
+}
+
+@media(max-width: 1500px) {
+    .content {
+        padding-left: 8%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .visual {
+        flex-direction: column-reverse;
+    }
+
+    .info {
+        width: 90%;
+        padding: 0;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .image{
+        width: 75.5vw;
+        height: 20vw;
+    }
+
+    .ABOUT_COMICSHOP{
+        font-size: 8vw;
+    }
+
+    .info_text {
+        margin: 0;
+        padding-block: 5%;
+        padding-inline: 5%;
+    }    
+}
+
+@media(max-width: 900px){
+    .content{
+        padding: 0;
+    }
+
+    .image{
+        width: 90vw;
+        height: 40vw;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+    .info_text{
+        font-size: 14pt;
+        line-height: 14px;
+    }
+}
+
+@media(max-width: 400px){
+    .ABOUT_COMICSHOP{
+        font-size: 24pt;
+    }
 }

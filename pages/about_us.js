@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Navbar from "@/components/navbar"
 import styles from "../styles/About_us.module.css"
 import Image from "next/image"
@@ -6,6 +7,10 @@ import image from "../resources/images/lxJEfrP.jpg"
 export default function Contact() {
     return (
         <>
+            <Head>
+                <title>ABOUT US</title>
+                <link rel="icon" href="https://img.icons8.com/hatch/64/anime.png" />
+            </Head>
             <div className={styles.container}>
                 <Navbar />
                 <div className={styles.content}>
@@ -14,7 +19,7 @@ export default function Contact() {
                         <h2 className={styles.info_text}>And today we are very glad that we can continue to please you with a grand assortment, cool design, close-knit work of our team, high level of service and personal approach to each customer.</h2>
                     </div>
                     <div className={styles.visual}>
-                        <Image src={image} className={styles.image}/>
+                        <Image src={image} className={styles.image} />
                         <h1 className={styles.ABOUT_COMICSHOP}>ABOUT COMICSHOP</h1>
                     </div>
                 </div>

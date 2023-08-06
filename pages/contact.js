@@ -1,4 +1,6 @@
+import React, { useEffect, useRef } from 'react'
 import Link from "next/link"
+import Head from 'next/head'
 import Navbar from "@/components/navbar"
 import styles from "../styles/Contact.module.css"
 import Image from "next/image"
@@ -10,6 +12,10 @@ import image2 from "../resources/images/Bezymyanny-1.png"
 export default function Contact() {
     return (
         <>
+            <Head>
+                <title>CONTACT</title>
+                <link rel="icon" href="https://img.icons8.com/hatch/64/anime.png" />
+            </Head>
             <div className={styles.container}>
                 <Navbar />
                 <div className={styles.content}>
@@ -20,7 +26,7 @@ export default function Contact() {
                     <div className={styles.contacts}>
                         <div className={styles.contacts_row}>
                             <div className={styles.space}>
-                                <Link href="/">
+                                <Link href="https://instagram.com/daamsha?igshid=MzRlODBiNWFlZA==">
                                     <Image src={image1} className={styles.inst_img} />
                                 </Link>
                             </div>
@@ -30,7 +36,7 @@ export default function Contact() {
                         </div>
                         <div className={styles.contacts_row}>
                             <div className={styles.uspace}>
-                                <Link href="/">
+                                <Link href="https://www.youtube.com/watch?v=Zi_XLOBDo_Y">
                                     <Image src={image2} className={styles.utube_img} />
                                 </Link>
                             </div>
@@ -40,7 +46,7 @@ export default function Contact() {
                         </div>
                         <div className={styles.contacts_row}>
                             <div className={styles.space}>
-                                <Link href="/">
+                                <Link href="https://www.facebook.com/Nizariyyah/">
                                     <Image src={image3} className={styles.inst_img} />
                                 </Link>
                             </div>

@@ -1,0 +1,203 @@
+.navbar {
+    margin-inline: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: black;
+    font-size: 44pt;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    text-decoration: none;
+}
+
+.logo:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.logo:active {
+    color: black;
+}
+
+.content_menu {
+    height: 100%;
+    width: 300px;
+
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 1;
+    right: 0;
+
+    background-color: #9f9f9f;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    transition: margin-right 1s ease;
+}
+
+.animate {
+    margin-right: -30%;
+}
+
+.menu_button {
+    margin-bottom: 5pt;
+
+    padding-inline: 40pt;
+    padding-top: 20pt;
+    padding-bottom: 10pt;
+
+    border: 0;
+    background: none;
+
+    color: black;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 18pt;
+}
+
+.menu_button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #424242;
+}
+
+.menu_button:active {
+    color: black;
+}
+
+.button_inside_menu {
+    width: 100%;
+    padding-block: 2vh;
+
+    border: 0;
+    background-color: #d1d1d1;
+
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 12pt;
+}
+
+.button_inside_menu:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #424242;
+}
+
+.button_inside_menu:active {
+    color: black;
+}
+
+.button_inside_menu:disabled {
+    color: black;
+}
+
+.space {
+    margin-top: 20vh;
+}
+
+.authbox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authbutton {
+    width: 30%;
+    margin-top: 4%;
+    padding-block: 8pt;
+
+    border: 0;
+    border-radius: 39pt;
+
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 12pt;
+}
+
+.firstauthbutton {
+    color: black;
+    background-color: white;
+}
+
+.firstauthbutton:hover {
+    cursor: pointer;
+    color: #d1d1d1;
+}
+
+.firstauthbutton:active {
+    color: black;
+}
+
+.secondauthbutton {
+    color: white;
+    background-color: #424242;
+}
+
+.secondauthbutton:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.secondauthbutton:active {
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 40pt;
+    }
+
+    .menu_button {
+        margin-bottom: 5pt;
+
+        padding-inline: 30pt;
+        padding-top: 20pt;
+        padding-bottom: 10pt;
+
+        font-size: 16pt;
+    }
+}
+
+@media (max-width: 900px) {
+    .logo {
+        font-size: 30pt;
+    }
+
+    .menu_button {
+        margin-bottom: 0;
+        padding-inline: 20pt;
+        padding-top: 10pt;
+        padding-bottom: 10pt;
+        font-size: 14pt;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar{
+        margin: 0;
+        margin-left: 3%;
+    }
+
+    .logo {
+        font-size: 25pt;
+    }
+
+    .menu_button {
+        font-size: 12pt;
+    }
+
+    .content_menu{
+        width: 100%;
+    }
+
+    .animate{
+        margin-right: -100%;
+    }
+}
