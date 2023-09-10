@@ -77,12 +77,12 @@
         align-items: start;
     }
 
-    .image{
+    .image {
         width: 75.5vw;
         height: 20vw;
     }
 
-    .ABOUT_COMICSHOP{
+    .ABOUT_COMICSHOP {
         font-size: 8vw;
     }
 
@@ -90,33 +90,33 @@
         margin: 0;
         padding-block: 5%;
         padding-inline: 5%;
-    }    
+    }
 }
 
-@media(max-width: 900px){
-    .content{
+@media(max-width: 900px) {
+    .content {
         padding: 0;
     }
 
-    .image{
+    .image {
         width: 90vw;
         height: 40vw;
     }
 
-    .info{
+    .info {
         flex-direction: column;
     }
 }
 
-@media(max-width: 600px){
-    .info_text{
+@media(max-width: 600px) {
+    .info_text {
         font-size: 14pt;
         line-height: 14px;
     }
 }
 
-@media(max-width: 400px){
-    .ABOUT_COMICSHOP{
+@media(max-width: 400px) {
+    .ABOUT_COMICSHOP {
         font-size: 24pt;
     }
 }

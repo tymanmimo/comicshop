@@ -1,15 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../styles/CatalogMenu.module.css';
 import Link from 'next/link';
 
-const CatalogMenu = ({ isOpen, isAnimated, onMenuToggle }) => {
+const CatalogMenu = ({ isOpen, isAnimated }) => {
     const [isHidden, setIsHidden] = useState(true);
 
-
     useEffect(() => {
-        if(isAnimated){
+        if (isAnimated) {
             setIsHidden(false);
-        }else{
+        } else {
             setIsHidden(true);
         }
     }, [isAnimated]);

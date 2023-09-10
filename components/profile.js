@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import styles from '../styles/Auth.module.css'
 
-const LogInBox = ({ isOpen, onClose }) => {
+const Profile = ({ isOpen, onClose }) => {
     const modalRef = useRef(null);
     const [isHidden, setIsHidden] = useState(true);
     const [isAnimate, setIsAnimate] = useState(true);
@@ -30,13 +30,9 @@ const LogInBox = ({ isOpen, onClose }) => {
         };
     }, [onClose]);
 
-    const authToken = () => {
-        const email = document.getElementById('inputEmail').value;
-        const password = document.getElementById('inputPassword').value;
-        if(email == 'dasha.bobrovich@gmail.com' && password == 'zxcursed'){
-            localStorage.setItem('authEmail', email);   
-            onClose();
-        }
+    const signOut = () =>{
+        localStorage.removeItem('authEmail');
+        onClose();
     }
 
     return (
@@ -45,13 +41,16 @@ const LogInBox = ({ isOpen, onClose }) => {
                 <div className={`${styles.container} ${isHidden ? styles.hidden : ''}`}>
                     <div ref={modalRef} className={`${styles.content} ${isAnimate ? styles.animate : ''}`}>
                         <button className={styles.close_button} onClick={handleClose}>CLOSE</button>
-                        <div className={styles.main_content}>
-                            <h2 className={styles.text}>LOG IN TO YOUR<br/>ACCOUNT</h2>
-                            <input placeholder='Enter your email address' className={styles.input} id="inputEmail" />
-                            <input placeholder='Enter your password' className={styles.input} type="password" id="inputPassword" />
-                            <button className={styles.button} onClick={authToken}>CONTINUE</button>
+                        <div className={styles.profile_content}>
+                            <h2 className={styles.text}>PROFILE</h2>
+                            <div className={styles.profileBox}>
+                                <h2 className={styles.profileText}>EMAIL:<br/>dasha.bobrovich@gmail.com</h2>
+                                <h2 className={styles.profileText}>NAME:<br/>Dasha Bobrovich</h2>
+                            </div>
+                            <h2></h2>
+                            <h2></h2>
+                            <button className={styles.button} onClick={signOut}>SIGN OUT</button>
                         </div>
-                        <div className={styles.substrate}></div>
                     </div>
                 </div>
             )}
@@ -59,4 +58,4 @@ const LogInBox = ({ isOpen, onClose }) => {
     )
 }
 
-export default LogInBox;
+export default Profile;

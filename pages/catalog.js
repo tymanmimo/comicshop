@@ -21,7 +21,7 @@ export default function Catalog() {
             </Head>
             <div className={styles.container}>
                 <Navbar />
-                <ScrollToTopButton/>
+                <ScrollToTopButton />
                 <div className={styles.content}>
                     <div className={styles.filters}>
                         <button className={styles.filters_button} onClick={toggleFiltersMenu}>
@@ -38,9 +38,6 @@ export default function Catalog() {
                             <a className={styles.filters_paragraph}>NEW</a>
                         </div>
                     </div>
-
-
-
                     <div className={styles.product_area}>
                         <Product
                             title={"VENOM: LETHAL PROTECTOR II #4"}

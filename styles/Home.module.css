@@ -112,9 +112,3 @@
         margin-top: 20px;
     }
 }
-
-@media (max-width: 600px){
-    .viewblocktext{
-        text-align: center;
-    }
-}

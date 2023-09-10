@@ -26,9 +26,7 @@ const ScrollToTopButton = () => {
   return (
     <div>
       {showButton && (
-        <button className={styles.scrollToTopButton} onClick={scrollToTop}>
-          ↑
-        </button>
+        <button className={styles.scrollToTopButton} onClick={scrollToTop}/>
       )}
     </div>
   );

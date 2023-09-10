@@ -1,6 +1,6 @@
 import styles from "@/styles/Product.module.css"
 
-export default function Product({ title, author, price, path}) {
+export default function Product({ title, author, price, path }) {
     return (
         <>
             <div className={styles.container}>

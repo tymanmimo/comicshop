@@ -14,7 +14,7 @@ export default function Contact() {
             </Head>
             <div className={styles.container}>
                 <Navbar />
-                <ScrollToTopButton/>
+                <ScrollToTopButton />
                 <div className={styles.content}>
                     <div className={styles.info}>
                         <h2 className={styles.info_text}>We used to think that our store compares favorably with other book and comic stores precisely because of our approach to business, design, assortment, advertising and communication with customers. We value our customers and try to dedicate those interested in the vast, but so interesting and diverse world of comics. Each of our employees will be happy to help you find something to your taste, even if you don't know what exactly you are looking for or where to start getting acquainted with comics.</h2>

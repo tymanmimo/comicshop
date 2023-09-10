@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Navbar from '@/components/navbar'
@@ -14,7 +13,7 @@ export default function Home() {
             </Head>
             <div className={styles.container}>
                 <Navbar />
-                <ScrollToTopButton/>
+                <ScrollToTopButton />
                 <div className={styles.categorys}>
                     <div className={`${styles.comicbooks} ${styles.viewblock}`}>
                         <h1 className={styles.viewblocktext}>COMIC BOOKS</h1>

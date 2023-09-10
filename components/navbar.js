@@ -18,11 +18,11 @@ const Navbar = () => {
 
     return (
         <>
-                {isLargeScreen ? (
-                    <><LargeNavbar/></>
-                ) : (
-                    <><CompactNavbar/></>
-                )}
+            {isLargeScreen ? (
+                <><LargeNavbar /></>
+            ) : (
+                <><CompactNavbar /></>
+            )}
         </>
     )
 }

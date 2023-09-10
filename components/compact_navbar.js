@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from '../styles/CompactNavbar.module.css'
 import CatalogMenu from './catalog_menu'
 import LogInBox from './log_in_box'
@@ -84,7 +84,7 @@ const CompactNavbar = () => {
                                 <button className={styles.button_inside_menu}>ABOUT US</button>
                             </Link>
                         </div>
-                        <div className={styles.authbox}>
+                        <div className={styles.authbox} id='authCont'>
                             <button className={`${styles.authbutton} ${styles.firstauthbutton} ${styles.button_height}`} onClick={handleLogInOpen}>SIGN UP</button>
                             <button className={`${styles.authbutton} ${styles.secondauthbutton}`} onClick={handleSignInOpen}>LOG IN</button>
                         </div>

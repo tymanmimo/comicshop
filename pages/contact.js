@@ -19,7 +19,7 @@ export default function Contact() {
             </Head>
             <div className={styles.container}>
                 <Navbar />
-                <ScrollToTopButton/>
+                <ScrollToTopButton />
                 <div className={styles.content}>
                     <div className={styles.info}>
                         <h2 className={styles.mail}>cs@comics.com</h2>
