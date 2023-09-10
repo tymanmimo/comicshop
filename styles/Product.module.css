@@ -1,0 +1,81 @@
+.container {
+    margin-top: 15vh;
+    margin-inline: 1vw;
+}
+
+.row {
+    padding-top: 20px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price {
+    margin: 0;
+    color: white;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 24pt;
+}
+
+.button {
+    padding: 0;
+    border: 0;
+    background: none;
+
+    color: rgb(210, 210, 210);
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 24pt;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.image_container{
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.image {
+    display: block;
+}
+
+.image_overlay {
+    padding-bottom: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.overlay_text {
+    margin: 0;
+    color: rgb(235, 235, 235);
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 16pt;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s 0.2s;
+}
+
+.image_container:hover{
+    cursor: pointer;
+
+    .image_overlay{
+        opacity: 1;
+    }
+    .overlay_text{
+        opacity: 1;
+    }
+}

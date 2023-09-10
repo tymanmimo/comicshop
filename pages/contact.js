@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import Link from "next/link"
 import Head from 'next/head'
 import Navbar from "@/components/navbar"
+import ScrollToTopButton from '@/components/scroll_to_top_button'
 import styles from "../styles/Contact.module.css"
 import Image from "next/image"
 import image1 from "../resources/images/Bezykjhg.png"
@@ -18,6 +19,7 @@ export default function Contact() {
             </Head>
             <div className={styles.container}>
                 <Navbar />
+                <ScrollToTopButton/>
                 <div className={styles.content}>
                     <div className={styles.info}>
                         <h2 className={styles.mail}>cs@comics.com</h2>
@@ -26,7 +28,7 @@ export default function Contact() {
                     <div className={styles.contacts}>
                         <div className={styles.contacts_row}>
                             <div className={styles.space}>
-                                <Link href="https://instagram.com/daamsha?igshid=MzRlODBiNWFlZA==">
+                                <Link href="https://instagram.com/daamsha?igshid=MzRlODBiNWFlZA==" className={styles.link_zero}>
                                     <Image src={image1} className={styles.inst_img} />
                                 </Link>
                             </div>

@@ -5,6 +5,7 @@ import Link from 'next/link';
 const CatalogMenu = ({ isOpen, isAnimated, onMenuToggle }) => {
     const [isHidden, setIsHidden] = useState(true);
 
+
     useEffect(() => {
         if(isAnimated){
             setIsHidden(false);
@@ -19,22 +20,22 @@ const CatalogMenu = ({ isOpen, isAnimated, onMenuToggle }) => {
                 <div className={`${styles.catalog_menu} ${isHidden ? styles.hidden : ''}`}>
                     <ul className={styles.ul_menu}>
                         <li>
-                            <Link href="/catalog" className={styles.menu_text}>
+                            <Link href='/catalog' className={styles.menu_text}>
                                 COMIC BOOKS
                             </Link>
                         </li>
                         <li>
-                            <Link href="/catalog" className={styles.menu_text}>
+                            <Link href='/catalog' className={styles.menu_text}>
                                 MANGA
                             </Link>
                         </li>
                         <li>
-                            <Link href="/catalog" className={styles.menu_text}>
+                            <Link href='/catalog' className={styles.menu_text}>
                                 RANOBE
                             </Link>
                         </li>
                         <li>
-                            <Link href="/catalog" className={styles.menu_text}>
+                            <Link href='/catalog' className={styles.menu_text}>
                                 ON SALE
                             </Link>
                         </li>

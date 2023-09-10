@@ -1,0 +1,148 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+.filters{
+    z-index: 4;
+    margin-top: 35px;
+    margin-left: 2vw;
+}
+
+.filters_button {
+    width: 150px;
+    
+    border: 2px solid black;
+    background: none;
+
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 20pt;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+        
+.filters_button:disabled{
+    color: black;
+}
+
+.filters_menu{
+    z-index: 1;
+    width: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: none;
+}
+
+.filters_open{
+    display: flex;
+}
+
+.filters_paragraph{
+    width: 138px;
+    height: 35px;
+    padding-inline: 6px;
+
+    color: white;
+    font-family: 'Franklin Gothic Demi Cond Regular';
+    font-size: 12pt;
+    background-color: black;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.filters_paragraph:hover{
+    cursor: pointer;
+    color: rgb(180, 180, 180);
+}
+
+.first_cross {
+    background: black;
+    height: 8px;
+    width: 2.5px;
+    position: relative;
+    left: 40px;
+}
+
+.first_cross::after {
+    content: "";
+    height: 2.5px;
+    width: 40px;
+    background: black;
+    position: absolute;
+    left: -30px;
+    top: 2.75px;
+}
+
+.second_cross {
+    background: black;
+    height: 8px;
+    width: 2.5px;
+    position: relative;
+    left: 20px;
+}
+
+.second_cross::after {
+    content: "";
+    height: 2.5px;
+    width: 40px;
+    background: black;
+    position: absolute;
+    left: -10px;
+    top: 2.75px;
+}
+
+.filters_button:hover{
+    cursor: pointer;
+}
+
+.filters_button:active{
+    color: white;
+    background-color: black;
+    
+    .first_cross{
+        background-color: white;
+    }
+
+    .first_cross::after{
+        background-color: white;
+    }
+
+    .second_cross{
+        background-color: white;
+    }
+
+    .second_cross::after{
+        background-color: white;
+    }
+}
+
+.product_area{
+    z-index: 3;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    background-color: #171717;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px){
+    .content{
+        margin: 0;
+        padding: 0;
+    }
+}
