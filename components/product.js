@@ -5,7 +5,7 @@ export default function Product({ title, author, price, path }) {
         <>
             <div className={styles.container}>
                 <div className={styles.image_container}>
-                    <img src={path} className={styles.image} />
+                    <img url={path} className={styles.image} />
                     <div className={styles.image_overlay}>
                         <p className={styles.overlay_text}>{title}</p>
                         <p className={styles.overlay_text}>{author}</p>
