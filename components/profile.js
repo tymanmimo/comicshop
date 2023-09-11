@@ -48,7 +48,7 @@ const Profile = ({ isOpen, onClose }) => {
                                 <h2 className={styles.profileText}>NAME:<br/>Dasha Bobrovich</h2>
                             </div>
                             <h2></h2>
-                            <h2></h2>
+                            <img src="https://media.tenor.com/JXGMaWurWmIAAAAd/котенок-котики.gif" className={styles.gif}/>
                             <button className={styles.button} onClick={signOut}>SIGN OUT</button>
                         </div>
                     </div>

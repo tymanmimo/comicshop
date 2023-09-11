@@ -17,17 +17,17 @@
     transition: opacity 500ms ease;
 }
 
-.hidden{
+.hidden {
     opacity: 0;
 }
 
-.animate{
+.animate {
     margin-top: 40%;
 }
 
 
 .content {
-    width: 22%;   
+    width: 22%;
     height: 40vw;
     padding-inline: 3%;
 
@@ -43,7 +43,7 @@
     transition: margin 500ms ease;
 }
 
-.close_button{
+.close_button {
     display: none;
     width: 100%;
     height: 5vh;
@@ -52,19 +52,19 @@
     padding: 0;
     border-bottom: 1px solid #424242;
     background-color: white;
-    
+
     color: #424242;
     font-family: 'Franklin Gothic Demi Cond Regular';
     font-size: 16pt;
 }
 
-.substrate{
+.substrate {
     display: none;
     width: 100%;
     height: 0;
 }
 
-.main_content{
+.main_content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -90,7 +90,7 @@
     font-size: 20pt;
     font-family: 'Franklin Gothic Demi Cond Regular';
     text-align: center;
-    outline: none;    
+    outline: none;
 }
 
 .button {
@@ -109,7 +109,7 @@
     color: white;
     font-family: 'Franklin Gothic Demi Cond Regular';
     font-size: 20pt;
-    
+
 }
 
 .button:hover {
@@ -123,7 +123,7 @@
     background-color: black;
 }
 
-.profile_content{
+.profile_content {
     margin-block: 15%;
     width: 100%;
     height: 100%;
@@ -133,48 +133,54 @@
     align-items: center;
 }
 
-.profileBox{
+.profileBox {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-.profileText{
+.profileText {
     margin: 0;
     color: #424242;
     font-size: 24pt;
-    font-family: 'Franklin Gothic Demi Cond Regular';   
+    font-family: 'Franklin Gothic Demi Cond Regular';
+}
+
+.gif {
+    width: 250px;
+    height: 250px;
 }
 
 @media (max-width: 1500px) {
-    .content{
+    .content {
         height: 100vh;
         width: 400px;
     }
-    .text{
+
+    .text {
         margin-block: 3vh;
     }
 
-    .input{
+    .input {
         margin-block: 3vh;
     }
 
-    .button{
+    .button {
         margin-block: 5vh;
     }
 }
 
 @media (max-width: 600px) {
-    .close_button{
+    .close_button {
         display: block;
     }
 
-    .substrate{
+    .substrate {
         display: block;
     }
 
-    .content{
+    .content {
         justify-content: space-between;
     }
 }
