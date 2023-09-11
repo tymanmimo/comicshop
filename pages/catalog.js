@@ -67,7 +67,7 @@ export default function Catalog() {
                             title={"VOLVERINE #34"}
                             author={"Percy, Ryp"}
                             price={9.99}
-                            path={"/portraituncanny1.jpg"}
+                            path={"./public/portraituncanny1.jpg"}
                         />
                         <Product
                             title={"SPIDER-MAN: INDIA"}
@@ -85,7 +85,7 @@ export default function Catalog() {
                             title={"X-23: DEADLY REGENESIS #4"}
                             author={"Schultz, Salazar"}
                             price={9.99}
-                            path={"/portrait_uncanny_5.jpg"}
+                            path={"./public/portrait_uncanny_5.jpg"}
                         />
                     </div>
                 </div>
