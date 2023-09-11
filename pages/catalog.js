@@ -43,7 +43,7 @@ export default function Catalog() {
                             title={"VENOM: LETHAL PROTECTOR II #4"}
                             author={"Michelinie, Karami"}
                             price={9.99}
-                            path={"/portraituncanny1.png"}
+                            path={"portraituncanny1.png"}
                         />
                         <Product
                             title={"EXTREME VENOMVERSE #3"}
@@ -67,7 +67,7 @@ export default function Catalog() {
                             title={"VOLVERINE #34"}
                             author={"Percy, Ryp"}
                             price={9.99}
-                            path={"./public/portraituncanny1.jpg"}
+                            path={"portraituncanny1.jpg"}
                         />
                         <Product
                             title={"SPIDER-MAN: INDIA"}
