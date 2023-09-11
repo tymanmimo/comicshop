@@ -73,7 +73,7 @@ export default function Catalog() {
                             title={"SPIDER-MAN: INDIA"}
                             author={"Shukla, Malsuni"}
                             price={9.99}
-                            path={"/portrait_uncanny_6.png"}
+                            path={"../public/portrait_uncanny_6.png"}
                         />
                         <Product
                             title={"MOON KNIGHT #24"}
