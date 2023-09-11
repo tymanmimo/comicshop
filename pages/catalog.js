@@ -61,7 +61,7 @@ export default function Catalog() {
                             title={"MARVEL'S SPIDER-MAN 2 #1"}
                             author={"Gage, Guara"}
                             price={9.99}
-                            path={"/portrait_uncanny_2.png"}
+                            path={"@/public/portrait_uncanny_2.png"}
                         />
                         <Product
                             title={"VOLVERINE #34"}
