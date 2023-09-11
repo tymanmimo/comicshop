@@ -49,43 +49,43 @@ export default function Catalog() {
                             title={"EXTREME VENOMVERSE #3"}
                             author={"Templeton, Daniel"}
                             price={9.99}
-                            path={"/portrait_uncanny_1.png"}
+                            path={"../public/portrait_uncanny_1.png"}
                         />
                         <Product
                             title={"CARNAGE #14"}
                             author={"Paknadel, Manna"}
                             price={9.99}
-                            path={"/portrait_uncanny_3.png"}
+                            path={"@/public/portrait_uncanny_3.png"}
                         />
                         <Product
                             title={"MARVEL'S SPIDER-MAN 2 #1"}
                             author={"Gage, Guara"}
                             price={9.99}
-                            path={"@/public/portrait_uncanny_2.png"}
+                            path={"/portrait_uncanny_2.png"}
                         />
                         <Product
                             title={"VOLVERINE #34"}
                             author={"Percy, Ryp"}
                             price={9.99}
-                            path={"/portrait_uncanny_8.png"}
+                            path={"/portrait_uncanny_8.jpg"}
                         />
                         <Product
                             title={"SPIDER-MAN: INDIA"}
                             author={"Shukla, Malsuni"}
                             price={9.99}
-                            path={"../public/portrait_uncanny_6.png"}
+                            path={"../public/portrait_uncanny_6.jpg"}
                         />
                         <Product
                             title={"MOON KNIGHT #24"}
                             author={"Mackay, Sabbatini"}
                             price={9.99}
-                            path={"/portrait_uncanny_7.png"}
+                            path={"@/public/portrait_uncanny_7.jpg"}
                         />
                         <Product
                             title={"X-23: DEADLY REGENESIS #4"}
                             author={"Schultz, Salazar"}
                             price={9.99}
-                            path={"/portrait_uncanny_5.png"}
+                            path={"/portrait_uncanny_5.jpg"}
                         />
                     </div>
                 </div>
