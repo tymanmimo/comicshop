@@ -49,7 +49,7 @@ export default function Catalog() {
                             title={"EXTREME VENOMVERSE #3"}
                             author={"Templeton, Daniel"}
                             price={9.99}
-                            path={"/portraituncanny1.jpg"}
+                            path={"/portrait_uncanny_1.jpg"}
                         />
                         <Product
                             title={"CARNAGE #14"}
