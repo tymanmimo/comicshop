@@ -49,7 +49,7 @@
     top: 0;
     left: 0;
     width: 300px;
-    height: 410px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -57,6 +57,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity 0.5s;
+    z-index: 1000;
 }
 
 .overlay_text {
@@ -65,17 +66,11 @@
     font-family: 'Franklin Gothic Demi Cond Regular';
     font-size: 16pt;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s 0.2s;
 }
 
-.image_container:hover{
+.image_overlay:hover{
     cursor: pointer;
-
-    .image_overlay{
-        opacity: 1;
-    }
-    .overlay_text{
-        opacity: 1;
-    }
+    opacity: 1;
 }
