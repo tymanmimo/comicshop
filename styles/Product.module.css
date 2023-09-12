@@ -44,12 +44,11 @@
 }
 
 .image_overlay {
-    padding-bottom: 40px;
     position: absolute;
     top: 0;
     left: 0;
     width: 300px;
-    height: 400px;
+    height: 410px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -68,6 +67,10 @@
     text-align: center;
     opacity: 1;
     transition: opacity 0.5s 0.2s;
+}
+
+.overlay_text:last-child {
+    padding-bottom: 20px;
 }
 
 .image_overlay:hover{
