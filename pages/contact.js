@@ -28,7 +28,7 @@ export default function Contact() {
                     <div className={styles.contacts}>
                         <div className={styles.contacts_row}>
                             <div className={styles.space}>
-                                <Link href="https://instagram.com/daamsha?igshid=MzRlODBiNWFlZA==" className={styles.link_zero}>
+                                <Link href="https://instagram.com/daamsha?igshid=MzRlODBiNWFlZA==" className={styles.link_zero} target="_blank" rel="noopener noreferrer">
                                     <Image src={image1} className={styles.inst_img} />
                                 </Link>
                             </div>
@@ -38,7 +38,7 @@ export default function Contact() {
                         </div>
                         <div className={styles.contacts_row}>
                             <div className={styles.uspace}>
-                                <Link href="https://www.youtube.com/watch?v=Zi_XLOBDo_Y">
+                                <Link href="https://www.youtube.com/watch?v=Zi_XLOBDo_Y" target="_blank" rel="noopener noreferrer">
                                     <Image src={image2} className={styles.utube_img} />
                                 </Link>
                             </div>
@@ -48,7 +48,7 @@ export default function Contact() {
                         </div>
                         <div className={styles.contacts_row}>
                             <div className={styles.space}>
-                                <Link href="https://www.facebook.com/Nizariyyah/">
+                                <Link href="https://www.facebook.com/Nizariyyah/" target="_blank" rel="noopener noreferrer">
                                     <Image src={image3} className={styles.inst_img} />
                                 </Link>
                             </div>
